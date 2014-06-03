@@ -1,0 +1,15 @@
+#!/bin/bash
+/opt/core/bin/spiped-configure-smf api-redis encrypt [127.0.0.1]:63790 [$(mdata-get api_redis_addr)]:63790 $(mdata-get api_redis_key)
+/opt/core/bin/spiped-configure-smf mbox-lmtp decrypt [::]:2424         [::1]:24                            $(mdata-get mbox_lmtp_key)
+
+$(mdata-get mbox_ssl_cert) > /opt/local/etc/ssl/certs/dovecot.pem
+$(mdata-get mbox_ssl_key)  > /opt/local/etc/ssl/private/dovecot.pem
+
+if mdata-get mbox_ssl_key > /dev/null; then
+	cat > /opt/local/etc/dovecot/ssl.conf <<EOF
+ssl = yes
+disable_plaintext_auth = yes
+ssl_cert = </opt/local/etc/ssl/certs/dovecot.pem
+ssl_key = </opt/local/etc/ssl/private/dovecot.pem
+EOF
+fi
