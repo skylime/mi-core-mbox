@@ -7,13 +7,6 @@ PATH=/opt/local/gnu/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin
 # Exit if any commands fail
 set -o errexit
 
-# Ensure we have updated standard packages
-echo "* Updating standard packages.";
-pkg_delete -v nodejs smtools
-pkg_add -v nodejs smtools dtracetools htop
-npm install smartdc -g
-npm install jsontool -g
-
 echo "* Setup redis"
 mkdir -p /var/run/redis/
 chown redis:redis /var/run/redis/
