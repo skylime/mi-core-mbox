@@ -18,7 +18,7 @@ KEYDIR=/opt/local/etc/spiped/
 KEYFILE=${KEYDIR}${INSTANCE}.key
 mkdir -p ${KEYDIR}
 
-echo $KEY | base64 -d > $KEYFILE
+echo $KEY | /opt/local/bin/base64 -d > $KEYFILE
 
 svccfg -s spiped add $INSTANCE
 svccfg -s spiped:$INSTANCE addpg spiped application
