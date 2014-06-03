@@ -12,8 +12,8 @@ mkdir -p /var/run/redis/
 chown redis:redis /var/run/redis/
 usermod -G redis dovecot
 
-echo "* Install dovecot auth proxy"
-npm install -g dovecot-auth-proxy
+echo "* Install dovecot auth daemon"
+npm install -g dovecot-core-authd
 svccfg import /opt/local/lib/node_modules/dovecot-core-authd/manifest.xml
 
 echo "* Install spiped"
