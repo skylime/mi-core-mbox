@@ -14,7 +14,9 @@ pkg_add -v nodejs smtools dtracetools htop
 npm install smartdc -g
 npm install jsontool -g
 
-echo "* Allow dovecot user to access redis"
+echo "* Setup redis"
+mkdir -p /var/run/redis/
+chown redis:redis /var/run/redis/
 usermod -G redis dovecot
 
 echo "* Install dovecot auth proxy"
