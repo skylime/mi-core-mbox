@@ -7,9 +7,6 @@ if ! zfs list $DDS > /dev/null; then
         exit 0
 fi
 
-# remove mailx lock dir
-rm -rf /var/mail/\:saved/
-
 zfs set mountpoint=/var/mail/ $DDS
 zfs set compression=lz4 $DDS
 chown dovecot:dovecot /var/mail/
