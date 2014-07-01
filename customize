@@ -20,7 +20,7 @@ svccfg import /opt/local/lib/node_modules/dovecot-core-authd/manifest.xml
 echo "* Install spiped"
 pkg_add http://pkgsrc.smartos.skylime.net/skylime-extra/2014Q1/x86_64/spiped-1.3.1nb3.tgz
 
-echo "* Create sssl folder"
+echo "* Create ssl folder"
 mkdir -p /opt/local/etc/dovecot/ssl
 
 echo "* Enable mdata-setup script"
