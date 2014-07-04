@@ -20,13 +20,16 @@ MUNIN_PLUGINS=(
 )
 
 for plugin in "${MUNIN_PLUGINS[@]}"; do
-	if [[ ${plugin} =~ .*_.*_.* ]]; then
+	if [ ! -x ${MUNIN_PLUGIN_SRC}/${plugin} ]; then
 		plugin_src=${plugin%_*}_
 	else
 		plugin_src=${plugin}
 	fi
-	ln -s /opt/local/lib/munin/plugins/${plugin_src} /opt/local/etc/munin/plugins/${plugin}
+	if [ -x ${MUNIN_PLUGIN_SRC}/${src_plugin} ]; then
+		ln -s ${MUNIN_PLUGIN_SRC}/${plugin_src} ${MUNIN_PLUGIN_DST}/${plugin}
+	fi
 done
+
 
 # Enable munin service
 /usr/sbin/svcadm enable svc:/pkgsrc/munin-node:default
