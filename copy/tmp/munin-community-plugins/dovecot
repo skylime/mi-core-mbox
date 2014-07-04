@@ -21,7 +21,7 @@ $aborted = 0;
 
 ($dirname = $0) =~ s/[^\/]+$//;
 
-$logfile = $ENV{'LOGFILE'} || '/var/log/mail.log';
+$logfile = $ENV{'LOGFILE'} || '/var/log/maillog';
 
 # Use an overrided $PATH for all external programs if needed
 $DOVEADM = "doveadm";
