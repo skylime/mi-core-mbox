@@ -21,7 +21,7 @@ MUNIN_PLUGINS=(
 
 for plugin in "${MUNIN_PLUGINS[@]}"; do
 	if [[ ${plugin} =~ .*_.*_.* ]]; then
-		plugin_src=${plugin%_*}
+		plugin_src=${plugin%_*}_
 	else
 		plugin_src=${plugin}
 	fi
