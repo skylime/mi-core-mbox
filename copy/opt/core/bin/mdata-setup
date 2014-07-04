@@ -22,14 +22,14 @@ $MUNIN_CONF_DIR='/opt/local/etc/munin/munin-conf.d'
 
 >${MUNIN_CONF_DIR}/allow.conf
 if mdata-get munin_allow 1>/dev/null 2>&1; then
-	for allow $(mdata-get munin_allow); do
+	for allow in $(mdata-get munin_allow); do
 		echo "cidr_allow ${allow}" >> ${MUNIN_CONF_DIR}/allow.conf
 	done
 fi
 
 >${MUNIN_CONF_DIR}/deny.conf
 if mdata-get munin_deny 1>/dev/null 2>&1; then
-	for deny $(mdata-get munin_deny); do
+	for deny in $(mdata-get munin_deny); do
 		echo "cidr_deny ${deny}" >> ${MUNIN_CONF_DIR}/deny.conf
 	done
 fi
