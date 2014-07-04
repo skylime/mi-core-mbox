@@ -10,6 +10,8 @@ Please refer to https://github.com/joyent/mibe for use of this repo.
 - <code>mbox_lmtp_key</code>: base64 encoded spipe key for lmtp (required)
 - <code>mbox_ssl</code>: ssl cert, key and CA for imaps and pop3s in pem format
 
+- `munin_allow`: hosts that are allowed to connect to munin, separated by space
+- `munin_deny`: hosts that are explicit not allowed, separated by space
 
 ## Services
 
