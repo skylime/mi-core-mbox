@@ -31,8 +31,8 @@ svccfg import /tmp/mdata-setup.xml
 rm /tmp/mdata-setup.xml
 
 # munin
-echo "* Create munin config folder"
-mkdir -p /opt/local/etc/munin/munin-conf.d
+echo "* Create munin template file that will be used during mdata setup"
+cp /opt/local/etc/munin/munin-node.conf /opt/local/etc/munin/munin-node.conf.tpl
 
 # Clean up
 echo "* Cleaning up."
