@@ -18,7 +18,7 @@ EOF
 fi
 
 # munin
-$MUNIN_CONF_DIR='/opt/local/etc/munin/munin-conf.d'
+MUNIN_CONF_DIR='/opt/local/etc/munin/munin-conf.d'
 
 >${MUNIN_CONF_DIR}/allow.conf
 if mdata-get munin_allow 1>/dev/null 2>&1; then
