@@ -34,6 +34,10 @@ rm /tmp/mdata-setup.xml
 echo "* Create munin template file that will be used during mdata setup"
 cp /opt/local/etc/munin/munin-node.conf /opt/local/etc/munin/munin-node.conf.tpl
 
+echo "* Copy community plugins"
+cp /tmp/munin-community-plugins/* /opt/local/lib/munin/plugins/
+rm -rf /tmp/munin-community-plugins
+
 # Clean up
 echo "* Cleaning up."
 rm -rf /root/*
