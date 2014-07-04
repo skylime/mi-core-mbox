@@ -7,6 +7,9 @@ PATH=/opt/local/gnu/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin
 # Exit if any commands fail
 set -o errexit
 
+# Configuring image specific packages
+echo "* Configuring image specific packages.";
+
 # remove mailx lock dir
 rm -rf /var/mail/\:saved/
 
@@ -27,8 +30,9 @@ echo "* Enable mdata-setup script"
 svccfg import /tmp/mdata-setup.xml
 rm /tmp/mdata-setup.xml
 
-# Configuring image specific packages
-echo "* Configuring image specific packages.";
+# munin
+echo "* Create munin config folder"
+mkdir -p /opt/local/etc/munin/munin-conf.d
 
 # Clean up
 echo "* Cleaning up."

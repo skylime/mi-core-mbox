@@ -1,15 +1,35 @@
 #!/bin/bash
+
+# spiped
 /opt/core/bin/spiped-configure-smf api-redis encrypt [127.0.0.1]:63790 [$(mdata-get api_redis_addr)]:63790 $(mdata-get api_redis_key)
 /opt/core/bin/spiped-configure-smf mbox-lmtp decrypt [::]:2424         [::1]:24                            $(mdata-get mbox_lmtp_key)
 
+# dovecot
 mdata-get mbox_ssl > /opt/local/etc/dovecot/ssl/dovecot.pem
 chmod 400 /opt/local/etc/dovecot/ssl/dovecot.pem
 
-if mdata-get mbox_ssl > /dev/null; then
+if mdata-get mbox_ssl 1>/dev/null 2>&1; then
 	cat > /opt/local/etc/dovecot/ssl.conf <<EOF
 ssl = yes
 disable_plaintext_auth = yes
 ssl_cert = </opt/local/etc/dovecot/ssl/dovecot.pem
 ssl_key = </opt/local/etc/dovecot/ssl/dovecot.pem
 EOF
+fi
+
+# munin
+$MUNIN_CONF_DIR='/opt/local/etc/munin/munin-conf.d'
+
+>${MUNIN_CONF_DIR}/allow.conf
+if mdata-get munin_allow 1>/dev/null 2>&1; then
+	for allow $(mdata-get munin_allow); do
+		echo "cidr_allow ${allow}" >> ${MUNIN_CONF_DIR}/allow.conf
+	done
+fi
+
+>${MUNIN_CONF_DIR}/deny.conf
+if mdata-get munin_deny 1>/dev/null 2>&1; then
+	for deny $(mdata-get munin_deny); do
+		echo "cidr_deny ${deny}" >> ${MUNIN_CONF_DIR}/deny.conf
+	done
 fi
