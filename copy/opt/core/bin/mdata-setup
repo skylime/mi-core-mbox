@@ -1,36 +1,17 @@
 #!/bin/bash
+# source all files from /opt/core/var/mdata-setup/includes/*.sh
+# we recommend a order by NUMBER-scriptname.sh
 
-# spiped
-/opt/core/bin/spiped-configure-smf api-redis encrypt [127.0.0.1]:63790 [$(mdata-get api_redis_addr)]:63790 $(mdata-get api_redis_key)
-/opt/core/bin/spiped-configure-smf mbox-lmtp decrypt [::]:2424         [::1]:24                            $(mdata-get mbox_lmtp_key)
+PATH=/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+export PATH
 
-# dovecot
-mdata-get mbox_ssl > /opt/local/etc/dovecot/ssl/dovecot.pem
-chmod 400 /opt/local/etc/dovecot/ssl/dovecot.pem
+# Set basedir for includes
+MDATA_SETUP_INC='/opt/core/var/mdata-setup/includes'
 
-if mdata-get mbox_ssl 1>/dev/null 2>&1; then
-	cat > /opt/local/etc/dovecot/ssl.conf <<EOF
-ssl = yes
-disable_plaintext_auth = yes
-ssl_cert = </opt/local/etc/dovecot/ssl/dovecot.pem
-ssl_key = </opt/local/etc/dovecot/ssl/dovecot.pem
-EOF
-fi
-
-# munin
-MUNIN_CONF='/opt/local/etc/munin/munin-node.conf'
-
-cp ${MUNIN_CONF}.tpl ${MUNIN_CONF}
-if mdata-get munin_allow 1>/dev/null 2>&1; then
-	echo "# mdata-get munin_allow" >> ${MUNIN_CONF}
-	for allow in $(mdata-get munin_allow); do
-		echo "cidr_allow ${allow}" >> ${MUNIN_CONF}
-	done
-fi
-
-if mdata-get munin_deny 1>/dev/null 2>&1; then
-	echo "# mdata-get munin_deny" >> ${MUNIN_CONF}
-	for deny in $(mdata-get munin_deny); do
-		echo "cidr_deny ${deny}" >> ${MUNIN_CONF}
+if [ -d "${MDATA_SETUP_INC}" ]; then
+	for FILE in ${MDATA_SETUP_INC}/*.sh; do
+		if [ -r "${FILE}" ]; then
+			source ${FILE}
+		fi
 	done
 fi
