@@ -14,9 +14,6 @@ Create zone with dovecot as imap and pop service, monitored via munin-node.
 - `mbox_lmtp_key`: base64 encoded spipe key for lmtp (required)
 - `mbox_ssl`: ssl cert, key and CA for imaps and pop3s in pem format
 
-- `munin_allow`: hosts that are allowed to connect to munin, separated by space
-- `munin_deny`: hosts that are explicit not allowed, separated by space
-
 ## services
 
 - `993/tcp`: imaps
