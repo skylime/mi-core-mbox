@@ -12,6 +12,6 @@ zfs set compression=lz4 $DDS
 chown dovecot:dovecot /var/mail/
 
 # znapzend for backup
-znapzendzetup create --recursive --tsformat='%Y-%m-%d-%H%M%S' \
+znapzendzetup create --recursive --tsformat='%Y-%m-%d-%H%M%S' --donotask \
 	SRC '7day=>1hour,30day=>1day,1year=>1week,10year=>1month' ${DDS}
 /usr/sbin/svcadm enable svc:/pkgsrc/znapzend:default
