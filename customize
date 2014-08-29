@@ -5,7 +5,6 @@
 PATH=/opt/local/gnu/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin
 
 # Munin plugins
-MUNIN_PLUGIN_VERSION='0.2'
 MUNIN_PLUGIN_SRC='/opt/local/lib/munin/plugins'
 MUNIN_PLUGIN_DST='/opt/local/etc/munin/plugins'
 MUNIN_PLUGINS=(
