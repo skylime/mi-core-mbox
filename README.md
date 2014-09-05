@@ -9,7 +9,7 @@ Create zone with dovecot as imap and pop service, monitored via munin-node.
 
 ## mdata variables
 
-- `api_redis_addr`: ip or hostname of api server (required)
+- `api_redis_addr`: ip or hostname of api server, ip addresses requires squared brackets (required)
 - `api_redis_key`: base64 encoded spipe key for api server (required)
 - `mbox_lmtp_key`: base64 encoded spipe key for lmtp (required)
 - `mbox_ssl`: ssl cert, key and CA for imaps and pop3s in pem format
