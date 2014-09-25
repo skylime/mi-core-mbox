@@ -1,7 +1,10 @@
-## Changelog for mi-core-mbox
+## Change Log
+
+### 14.2.1 (2014/09/25 21:27 +00:00)
+- [f74ec1e](https://github.com/skylime/mi-core-mbox/commit/f74ec1e42c83356f338bd0a764ee408c04c77838) update to new core-base image: a6fb1ff0-4333-11e4-a0e1-370c81688134 (@drscream)
+- [54dbacc](https://github.com/skylime/mi-core-mbox/commit/54dbacc8d920a3561fe61aed884c3e4bb6586d50) update version number (@drscream)
 
 ### 14.2.0 (2014/09/21 18:13 +00:00)
-
 - [3fe73b4](https://github.com/skylime/mi-core-mbox/commit/3fe73b4e91d6b85f38c4f1b40893d731f2156ac0) Initial release (@dcrudgington)
 - [f257eb3](https://github.com/skylime/mi-core-mbox/commit/f257eb37c85ba5064d7780b282408e950d3cd34d) Added LICENSE and copy directory (@dcrudgington)
 - [d631523](https://github.com/skylime/mi-core-mbox/commit/d6315237ff15b5d07a9dd1cc1dc3e0e55fe84414) Added var/zoneinit/includes directory (@dcrudgington)
@@ -76,3 +79,4 @@
 - [beb06cf](https://github.com/skylime/mi-core-mbox/commit/beb06cf8e7ac671e3ddd95676579bd5e51ab3511) update readme file (@drscream)
 - [16aae40](https://github.com/skylime/mi-core-mbox/commit/16aae40b337ebf981fdf59303f0168bc05d06c12) update to new core-base image: 99c9e7ac-34ed-11e4-bdc4-236f63b1ea9d (@drscream)
 - [cb849cd](https://github.com/skylime/mi-core-mbox/commit/cb849cdb8e26b5051a3b37aa393a74175e613ae0) update to new core-base image: 6babbf24-3765-11e4-a87a-23e846a65e81 (@drscream)
+- [0475b03](https://github.com/skylime/mi-core-mbox/commit/0475b0374b2f1c437b490be7693dac55773a2954) add changelog (@drscream)
