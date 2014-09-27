@@ -1,6 +1,17 @@
 # Changelog
 
-## 14.2.2
+## 14.2.3
+
+### New
+
+* support of sieve and managesieve with dovecot. [Thomas Merkel]
+
+### Other
+
+* version update. [Thomas Merkel]
+* add dovecot-pigeonhole pkg for sieve support. [Thomas Merkel]
+
+## 14.2.2 (2014-09-27)
 
 ### New
 
