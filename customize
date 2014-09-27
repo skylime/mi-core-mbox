@@ -20,6 +20,9 @@ echo "* Configuring image specific packages.";
 # remove mailx lock dir
 rm -rf /var/mail/\:saved/
 
+echo "* Remove all examples dovecot configuration"
+rm -r /opt/local/etc/dovecot/*
+
 echo "* Allow dovecot user access to redis"
 usermod -G redis dovecot
 
