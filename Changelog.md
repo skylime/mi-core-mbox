@@ -1,82 +1,106 @@
-## Change Log
+# Changelog
 
-### 14.2.1 (2014/09/25 21:27 +00:00)
-- [f74ec1e](https://github.com/skylime/mi-core-mbox/commit/f74ec1e42c83356f338bd0a764ee408c04c77838) update to new core-base image: a6fb1ff0-4333-11e4-a0e1-370c81688134 (@drscream)
-- [54dbacc](https://github.com/skylime/mi-core-mbox/commit/54dbacc8d920a3561fe61aed884c3e4bb6586d50) update version number (@drscream)
+## 14.2.2
 
-### 14.2.0 (2014/09/21 18:13 +00:00)
-- [3fe73b4](https://github.com/skylime/mi-core-mbox/commit/3fe73b4e91d6b85f38c4f1b40893d731f2156ac0) Initial release (@dcrudgington)
-- [f257eb3](https://github.com/skylime/mi-core-mbox/commit/f257eb37c85ba5064d7780b282408e950d3cd34d) Added LICENSE and copy directory (@dcrudgington)
-- [d631523](https://github.com/skylime/mi-core-mbox/commit/d6315237ff15b5d07a9dd1cc1dc3e0e55fe84414) Added var/zoneinit/includes directory (@dcrudgington)
-- [4688a1f](https://github.com/skylime/mi-core-mbox/commit/4688a1f405b65ff625a1506562a3544e1f8187f3) Removed .gitignore from copy directory (@dcrudgington)
-- [b85ec1c](https://github.com/skylime/mi-core-mbox/commit/b85ec1c9ec55582f177782360cb1d350ef8dc1f5) Added new packages file (@dcrudgington)
-- [44b4e61](https://github.com/skylime/mi-core-mbox/commit/44b4e61fbcb51ff98307525da592818a2e8dd335) Fixed customize (@dcrudgington)
-- [dd08bcc](https://github.com/skylime/mi-core-mbox/commit/dd08bcca66779dfb8fd4c705c78de953a6b054f4) Adding Readme (@cobracmder)
-- [82da6b3](https://github.com/skylime/mi-core-mbox/commit/82da6b3bcdc401835ca9fa9c5d93b4053d9093b9) Added extra space to motd (@dcrudgington)
-- [4a13be1](https://github.com/skylime/mi-core-mbox/commit/4a13be16f18d7d5d430027229dae509421693807) Merge branch 'master' of github.com:joyent/mi-example (@dcrudgington)
-- [7ba00ad](https://github.com/skylime/mi-core-mbox/commit/7ba00ad09715c7e8f551cbe5caa95fb025115324) Fixed verbage in packages file (@dcrudgington)
-- [6343670](https://github.com/skylime/mi-core-mbox/commit/6343670f84d2ff4978a5e5ef4af13845082753f5) initial commit mi-core-mbox (@BroSys)
-- [b40781c](https://github.com/skylime/mi-core-mbox/commit/b40781cbddbce832b4e916674575728dc73a2557) Added config-files (@BroSys)
-- [4b0687e](https://github.com/skylime/mi-core-mbox/commit/4b0687e80653897e72aa3904a259cb2a4b78b41c) dovecot config changes to only use pop3s and imaps + other small changes (@wiedi)
-- [49c1b5e](https://github.com/skylime/mi-core-mbox/commit/49c1b5ecfa8c773889f48d768a7d24774c6ad740) setup delegated dataset (@wiedi)
-- [e4ee211](https://github.com/skylime/mi-core-mbox/commit/e4ee211bd175906909c33d3d534fe54710ef8c7b) enable smf manifests for dovecot, dovecot-core-authd and redis (@wiedi)
-- [336730f](https://github.com/skylime/mi-core-mbox/commit/336730f40a862ff77364a3bbea06f9d52528a996) use mdata to setup spiped and configure ssl (@wiedi)
-- [2f080f5](https://github.com/skylime/mi-core-mbox/commit/2f080f58074b4c8fed99ec1b830046b5ee5f1e61) deploy redis with config (@wiedi)
-- [87bbfa9](https://github.com/skylime/mi-core-mbox/commit/87bbfa939eeeb0c744297c68ef5ba94fb7286a4a) 14.1 still callls it dovecot (@wiedi)
-- [2c83a33](https://github.com/skylime/mi-core-mbox/commit/2c83a338a946691bb8eb027aebb89a6696a9ed99) no need to reinstall sdc stuff (@wiedi)
-- [d12fe4a](https://github.com/skylime/mi-core-mbox/commit/d12fe4a10cbd64794bacdf49801c0bd1abbd4a53) fix typo (@wiedi)
-- [ef0d0e3](https://github.com/skylime/mi-core-mbox/commit/ef0d0e3d69229aeb746fb14120da8c0b1dfb134d) use correct name of package (@wiedi)
-- [e7ea132](https://github.com/skylime/mi-core-mbox/commit/e7ea132e07c7b01318f2b57b4bed804853583c13) dovecot should listen on lmtp port (@wiedi)
-- [0abcf95](https://github.com/skylime/mi-core-mbox/commit/0abcf95729e7fd2fe615a1f9400af0f4ecac329d) use full path to base64 (@wiedi)
-- [0da0fa9](https://github.com/skylime/mi-core-mbox/commit/0da0fa967bf348640e6d92f4f8f35d3d22f80ac1) /var/run is swap and redis doesn't create missing folders (@wiedi)
-- [65a0307](https://github.com/skylime/mi-core-mbox/commit/65a030717aaabc4e7ad7c815fe0fa3b9518c270f) list mdata variables and services in the readme (@wiedi)
-- [cfd449a](https://github.com/skylime/mi-core-mbox/commit/cfd449ae53cae2370d1ae1c0f2aae964a08660df) use tmp for redis socket (@wiedi)
-- [90ac3f9](https://github.com/skylime/mi-core-mbox/commit/90ac3f92e6d2164137779c8c96524be19a5e2f07) don't auto enable mdata-setup during provisioning (@wiedi)
-- [399cfa6](https://github.com/skylime/mi-core-mbox/commit/399cfa62d2407bb7e232c33afeb9d9c4195d014f) /var/mail/:saved/ should never end up in the image (@wiedi)
-- [5bc690f](https://github.com/skylime/mi-core-mbox/commit/5bc690f259ac2522961351200576a278380cddaf) also move the dovecot-core-authd socket (@wiedi)
-- [ba50a82](https://github.com/skylime/mi-core-mbox/commit/ba50a8212a146f3fa739e7ad2e7f3ac2b21607f2) Rename path for openssl certificate and key (@drscream)
-- [ef9c244](https://github.com/skylime/mi-core-mbox/commit/ef9c244cbefe955ede0d530fc0c525389842a039) remove subshell command for possible usage (@drscream)
-- [de1fe9d](https://github.com/skylime/mi-core-mbox/commit/de1fe9d07788aa6a29f673d0c54f9c2c5f1907fa) fix type in echo output (@drscream)
-- [8962197](https://github.com/skylime/mi-core-mbox/commit/8962197f1e2526dc701fc89ad546b2110de74152) update motd to be in core.io style (@drscream)
-- [0c82b94](https://github.com/skylime/mi-core-mbox/commit/0c82b9434b97259e7b3a17a26a6bb26483437786) add munin-node as default pkg for monitoring (@drscream)
-- [0ad1894](https://github.com/skylime/mi-core-mbox/commit/0ad18942c5384ea82a62b0e681e3258187c3a0a4) enable munin-node after installation (@drscream)
-- [6c1a9a9](https://github.com/skylime/mi-core-mbox/commit/6c1a9a92cd49389b18f84b6f525c02303291d465) enable and configure munin (@drscream)
-- [5f8f2f9](https://github.com/skylime/mi-core-mbox/commit/5f8f2f9e94825599ddb8caacd062b6da7ca0820c) Add munin config options to readme (@drscream)
-- [6a69689](https://github.com/skylime/mi-core-mbox/commit/6a69689a6c969f6c234530b0a2ebf0df34e2ec30) typo, missing `in` at for loop and readme update (@drscream)
-- [d5bd80a](https://github.com/skylime/mi-core-mbox/commit/d5bd80a32ccef76b7df5c06e748d66af17de8753) fix another typo for bash variable (@drscream)
-- [b6ccafd](https://github.com/skylime/mi-core-mbox/commit/b6ccafd67cd521f423c63382b9667e627bb7291c) Create munin config by ourself because includedir didn't work on munin-node (@drscream)
-- [861d2d0](https://github.com/skylime/mi-core-mbox/commit/861d2d0ffaf5b5e76dbb0c854d38ceae9061ab4a) configure munin plugins and add community plugins (@drscream)
-- [a1b5509](https://github.com/skylime/mi-core-mbox/commit/a1b550980e6ac073c7d32476bb332bf50ef6fd8b) fix dovecot default mail log (@drscream)
-- [bdf75c5](https://github.com/skylime/mi-core-mbox/commit/bdf75c56f308c480e7f150e00b9c15388ff80ba0) fix doveadm command (@drscream)
-- [78b9346](https://github.com/skylime/mi-core-mbox/commit/78b93466385dc0884feef74d1ce640af51397bc1) enable more plugins and build small script around (@drscream)
-- [02106d4](https://github.com/skylime/mi-core-mbox/commit/02106d4bb7cb932a54a7a6100a0e84782f97eac1) fix symlink for plugins (@drscream)
-- [7d3d18a](https://github.com/skylime/mi-core-mbox/commit/7d3d18ae313d8dd07990865748f09ac899da9e1b) be sure only valid plugins get activated (@drscream)
-- [b3b9cdb](https://github.com/skylime/mi-core-mbox/commit/b3b9cdb31b73a3daac4b9715bedccd98acb1814a) missing munin plugin variables (@drscream)
-- [2982382](https://github.com/skylime/mi-core-mbox/commit/2982382746fda593b950dadf42ea097a5822469c) fix plugin check for different munin stuff (@drscream)
-- [3e0a34e](https://github.com/skylime/mi-core-mbox/commit/3e0a34ef9654e3f0a1c157bc8c1d7ed75e26c913) Use mdata extra include folder (@drscream)
-- [b810364](https://github.com/skylime/mi-core-mbox/commit/b810364dec1eed6b35eaf5f04830c80273123359) Use mdata enable `-s` (@drscream)
-- [ece502e](https://github.com/skylime/mi-core-mbox/commit/ece502e4ca8fd1ea21e9a13368c2945ecc13c524) switch to munin community plugin repo and remove static file (@drscream)
-- [87c673b](https://github.com/skylime/mi-core-mbox/commit/87c673b0ab8a40b4c7ec7043e0ff0d58f36cc1e6) holy munin - fixed typo (@BroSys)
-- [874bc39](https://github.com/skylime/mi-core-mbox/commit/874bc39b40d0f2a1c07afac70d6a389f1a76b803) update to new version 14.2.0 and base image (@drscream)
-- [6400207](https://github.com/skylime/mi-core-mbox/commit/6400207ef92693b0a2634b614c0d30a374b0316b) spiped-configure-smf moved to base image (@drscream)
-- [2d0cfc1](https://github.com/skylime/mi-core-mbox/commit/2d0cfc1cd9fe89bc402a78ff010759d00d06de61) update base image (@drscream)
-- [e1a9850](https://github.com/skylime/mi-core-mbox/commit/e1a985099428cc163111b89fb57e384871babcfd) remove mdata setup script (@drscream)
-- [431b79e](https://github.com/skylime/mi-core-mbox/commit/431b79ebf91bb45f5d72995180b94c8c8c2da270) Add rblwatch/rblcheck script as pip pkg and create cronjob (@drscream)
-- [bb95699](https://github.com/skylime/mi-core-mbox/commit/bb9569991604b8be61205e15322429441611d2f3) remove rblwatch because not required on mbox server (@drscream)
-- [ba3d8c3](https://github.com/skylime/mi-core-mbox/commit/ba3d8c35097b153f2e57addd1538b11458a40682) add backup via znapzend (@drscream)
-- [2a26954](https://github.com/skylime/mi-core-mbox/commit/2a2695436835329afadb3a9143650b4e31f79ced) update to new base version (@drscream)
-- [06c9fd8](https://github.com/skylime/mi-core-mbox/commit/06c9fd8322d54387a28bdcc5f080bcf71cf811dd) add --donotask to backup system (@drscream)
-- [71236af](https://github.com/skylime/mi-core-mbox/commit/71236af85636d032f92e497c4154752607c0ac96) update to new base (@drscream)
-- [020c5cf](https://github.com/skylime/mi-core-mbox/commit/020c5cfc9d702b6ea4c7167cd6fcae88e130d2e9) Activate munin plugins (@drscream)
-- [4aee7ff](https://github.com/skylime/mi-core-mbox/commit/4aee7ffa3f240984d23ecbdbd99dbb45f99fccc4) version is not required (@drscream)
-- [eb9dab6](https://github.com/skylime/mi-core-mbox/commit/eb9dab65fc140e70e78d2092ac55ff03bb427f31) update to new core-base image: 86465fe4-312d-11e4-a145-57554f40fa40 (@drscream)
-- [0d8b7b8](https://github.com/skylime/mi-core-mbox/commit/0d8b7b8844bb865e802683f986b832af1bfdf5a9) Add script to remove unused mailboxes from server (@drscream)
-- [a18c9e9](https://github.com/skylime/mi-core-mbox/commit/a18c9e9c18887d81732022cd7e04df4e69574c66) update to new core-base image: fbd244a6-32bf-11e4-8629-73c3e6ed202d (@drscream)
-- [3cac44c](https://github.com/skylime/mi-core-mbox/commit/3cac44cd7de51b4964f6058a8d84dae57c023152) update to new core-base image: 5f749f3c-335f-11e4-a952-e780d226fa57 (@drscream)
-- [6aa12ac](https://github.com/skylime/mi-core-mbox/commit/6aa12ac42b984005718a3aeee1487bc266548f84) update to new core-base image: aed27f7a-34c4-11e4-be6c-4392ae5601bc (@drscream)
-- [5642678](https://github.com/skylime/mi-core-mbox/commit/56426784b89afe0167af43f00ca4e6d0b5796ca0) update to new core-base image: 89402478-34cf-11e4-ac94-f3a4d047918f (@drscream)
-- [b177926](https://github.com/skylime/mi-core-mbox/commit/b1779269cbd75de6b93aac76c3f38e52bda364a8) remove [] for spide configuration to also allow hostnames (@drscream)
-- [beb06cf](https://github.com/skylime/mi-core-mbox/commit/beb06cf8e7ac671e3ddd95676579bd5e51ab3511) update readme file (@drscream)
-- [16aae40](https://github.com/skylime/mi-core-mbox/commit/16aae40b337ebf981fdf59303f0168bc05d06c12) update to new core-base image: 99c9e7ac-34ed-11e4-bdc4-236f63b1ea9d (@drscream)
-- [cb849cd](https://github.com/skylime/mi-core-mbox/commit/cb849cdb8e26b5051a3b37aa393a74175e613ae0) update to new core-base image: 6babbf24-3765-11e4-a87a-23e846a65e81 (@drscream)
-- [0475b03](https://github.com/skylime/mi-core-mbox/commit/0475b0374b2f1c437b490be7693dac55773a2954) add changelog (@drscream)
+### New
+
+* update to new core-base image 43aaede4-4622-11e4-a839-d3704910e498. [Thomas Merkel]
+
+## 14.2.1 (2014-09-25)
+
+### Other
+
+* update changelog. [Thomas Merkel]
+* update version number. [Thomas Merkel]
+* update to new core-base image: a6fb1ff0-4333-11e4-a0e1-370c81688134. [Thomas Merkel]
+
+## 14.2.0 (2014-09-21)
+
+### Other
+
+* add changelog. [Thomas Merkel]
+* update to new core-base image: 6babbf24-3765-11e4-a87a-23e846a65e81. [Thomas Merkel]
+* update to new core-base image: 99c9e7ac-34ed-11e4-bdc4-236f63b1ea9d. [Thomas Merkel]
+* update readme file. [Thomas Merkel]
+* remove [] for spide configuration to also allow hostnames. [Thomas Merkel]
+* update to new core-base image: 89402478-34cf-11e4-ac94-f3a4d047918f. [Thomas Merkel]
+* update to new core-base image: aed27f7a-34c4-11e4-be6c-4392ae5601bc. [Thomas Merkel]
+* update to new core-base image: 5f749f3c-335f-11e4-a952-e780d226fa57. [Thomas Merkel]
+* update to new core-base image: fbd244a6-32bf-11e4-8629-73c3e6ed202d. [Thomas Merkel]
+* Add script to remove unused mailboxes from server. [Thomas Merkel]
+* update to new core-base image: 86465fe4-312d-11e4-a145-57554f40fa40. [Thomas Merkel]
+* version is not required. [Thomas Merkel]
+* Activate munin plugins. [Thomas Merkel]
+* update to new base. [Thomas Merkel]
+* add --donotask to backup system. [Thomas Merkel]
+* update to new base version. [Thomas Merkel]
+* add backup via znapzend. [Thomas Merkel]
+* remove rblwatch because not required on mbox server. [Thomas Merkel]
+* Add rblwatch/rblcheck script as pip pkg and create cronjob. [Thomas Merkel]
+* remove mdata setup script. [Thomas Merkel]
+* update base image. [Thomas Merkel]
+* spiped-configure-smf moved to base image. [Thomas Merkel]
+* update to new version 14.2.0 and base image. [Thomas Merkel]
+* holy munin - fixed typo. [BroSys]
+* switch to munin community plugin repo and remove static file. [Thomas Merkel]
+* Use mdata enable `-s` [Thomas Merkel]
+* Use mdata extra include folder. [Thomas Merkel]
+* fix plugin check for different munin stuff. [Thomas Merkel]
+* missing munin plugin variables. [Thomas Merkel]
+* be sure only valid plugins get activated. [Thomas Merkel]
+* fix symlink for plugins. [Thomas Merkel]
+* enable more plugins and build small script around. [Thomas Merkel]
+* fix doveadm command. [Thomas Merkel]
+* fix dovecot default mail log. [Thomas Merkel]
+* configure munin plugins and add community plugins. [Thomas Merkel]
+* Create munin config by ourself because includedir didn't work on munin-node. [Thomas Merkel]
+* fix another typo for bash variable. [Thomas Merkel]
+* typo, missing `in` at for loop and readme update. [Thomas Merkel]
+* Add munin config options to readme. [Thomas Merkel]
+* enable and configure munin. [Thomas Merkel]
+
+    * enable munin by default * allow to configure allow and deny hosts
+    via mdata
+
+* enable munin-node after installation. [Thomas Merkel]
+
+    * update permissions for .sh files to be not executeable
+
+* add munin-node as default pkg for monitoring. [Thomas Merkel]
+* update motd to be in core.io style. [Thomas Merkel]
+* fix type in echo output. [Thomas Merkel]
+* remove subshell command for possible usage. [Thomas Merkel]
+* Rename path for openssl certificate and key. [Thomas Merkel]
+
+    * provide new folder for ssl cert and key * setup permissions for the
+    file * create extra ssl folder on dovecot
+
+* also move the dovecot-core-authd socket. [Sebastian Wiedenroth]
+* /var/mail/:saved/ should never end up in the image. [Sebastian Wiedenroth]
+* don't auto enable mdata-setup during provisioning. [Sebastian Wiedenroth]
+* use tmp for redis socket. [Sebastian Wiedenroth]
+* list mdata variables and services in the readme. [Sebastian Wiedenroth]
+* /var/run is swap and redis doesn't create missing folders. [Sebastian Wiedenroth]
+* use full path to base64. [Sebastian Wiedenroth]
+* dovecot should listen on lmtp port. [Sebastian Wiedenroth]
+* use correct name of package. [Sebastian Wiedenroth]
+* fix typo. [Sebastian Wiedenroth]
+* no need to reinstall sdc stuff. [Sebastian Wiedenroth]
+* 14.1 still callls it dovecot. [Sebastian Wiedenroth]
+* deploy redis with config. [Sebastian Wiedenroth]
+* use mdata to setup spiped and configure ssl. [Sebastian Wiedenroth]
+* enable smf manifests for dovecot, dovecot-core-authd and redis. [Sebastian Wiedenroth]
+* setup delegated dataset. [Sebastian Wiedenroth]
+* dovecot config changes to only use pop3s and imaps + other small changes. [Sebastian Wiedenroth]
+* Added config-files modified package-list. [Boris Poblotzki]
+* initial commit mi-core-mbox. [Boris Poblotzki]
+* Fixed verbage in packages file. [Derek Crudgington]
+* Merge branch 'master' of github.com:joyent/mi-example. [Derek Crudgington]
+* Added extra space to motd. [Derek Crudgington]
+* Fixed customize. [Derek Crudgington]
+* Added new packages file. [Derek Crudgington]
+* Removed .gitignore from copy directory. [Derek Crudgington]
+* Added var/zoneinit/includes directory. [Derek Crudgington]
+* Added LICENSE and copy directory. [Derek Crudgington]
+* Initial release. [Derek Crudgington]
+
