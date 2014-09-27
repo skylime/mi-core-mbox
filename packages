@@ -1,4 +1,5 @@
 dovecot
+dovecot-pigeonhole
 redis
 munin-node
 p5-Net-CIDR
