@@ -21,7 +21,10 @@ echo "* Configuring image specific packages.";
 rm -rf /var/mail/\:saved/
 
 echo "* Remove all examples dovecot configuration"
-rm -r /opt/local/etc/dovecot/*
+shopt -s extglob
+rm /opt/local/etc/dovecot/conf.d/!(core-*)
+rm /opt/local/etc/dovecot/*.ext
+rm /opt/local/etc/dovecot/dovecot-example.conf
 
 echo "* Allow dovecot user access to redis"
 usermod -G redis dovecot
