@@ -9,6 +9,7 @@ MUNIN_PLUGIN_SRC='/opt/local/lib/munin/plugins'
 MUNIN_PLUGIN_DST='/opt/local/etc/munin/plugins'
 MUNIN_PLUGINS=(
 	'dovecot'
+	'redis_replication_status'
 )
 
 # Exit if any commands fail
