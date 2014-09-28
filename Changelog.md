@@ -1,9 +1,10 @@
 # Changelog
 
-## 14.2.3
+## 14.2.4
 
 ### New
 
+* update to new core-base image 4771851c-473c-11e4-a5d7-2336565b77d9. [Thomas Merkel]
 * support of sieve and managesieve with dovecot. [Thomas Merkel]
 
 ### Other
