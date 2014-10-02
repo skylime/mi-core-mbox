@@ -1,11 +1,48 @@
 # Changelog
 
-## 14.2.4
+## 14.2.5
+
+### New
+
+* update to new core-base image 5f32cd38-4a1f-11e4-82e4-632b59542bc6. [Thomas Merkel]
+
+## 14.2.4 (2014-09-28)
 
 ### New
 
 * update to new core-base image 4771851c-473c-11e4-a5d7-2336565b77d9. [Thomas Merkel]
+* new munin plugin redis_replication_status. [Thomas Merkel]
+
+### Changes
+
+* also listen on localhost for redis to be able to use the munin plugin. [Thomas Merkel]
+
+### Fix
+
+* Dovecot require full path to find the correct config file. [Thomas Merkel]
+
+## 14.2.3 (2014-09-27)
+
+### New
+
+* new: dev: be valid with new dovecot configuration @refactor. [Thomas Merkel]
+
+    'pop3s' protocol can no longer be specified (use protocols=pop3) to
+    disable non-ssl pop3, use service pop3-login { inet_listener pop3 {
+    port=0 } }
+
 * support of sieve and managesieve with dovecot. [Thomas Merkel]
+
+### Changes
+
+* chg: dev: rename files to start with core and not remove them @refactor. [Thomas Merkel]
+* fix path for ssl config file. [Thomas Merkel]
+* rename files to be dovecot valid. [Thomas Merkel]
+* use tabs please. [Thomas Merkel]
+
+### Fix
+
+* fix path in dovecot variables. [Thomas Merkel]
 
 ### Other
 
