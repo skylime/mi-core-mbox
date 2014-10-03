@@ -1,6 +1,13 @@
 # Changelog
 
-## 14.2.5
+## 14.2.6
+
+### New
+
+* version update. [Thomas Merkel]
+* add mdata for proxy setup which requires login_trusted_networks. [Thomas Merkel]
+
+## 14.2.5 (2014-10-02)
 
 ### New
 
