@@ -20,6 +20,7 @@ This image is part of the following images:
 - `api_redis_key` [*]: base64 encoded spipe key for api server
 - `mbox_lmtp_key` [*]: base64 encoded spipe key for lmtp
 - `mbox_ssl` [*]: ssl cert, key and CA for imaps and pop3s in pem format
+- `trusted_proxies`: add dovecot variable with trusted networks (space separated list)
 
 [*] is required to work properly.
 
