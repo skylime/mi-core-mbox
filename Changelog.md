@@ -4,8 +4,13 @@
 
 ### New
 
+* add new trusted_proxies variable to readme. [Thomas Merkel]
 * version update. [Thomas Merkel]
 * add mdata for proxy setup which requires login_trusted_networks. [Thomas Merkel]
+
+### Changes
+
+* change name to trusted_proxies. [Thomas Merkel]
 
 ## 14.2.5 (2014-10-02)
 
