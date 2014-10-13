@@ -40,6 +40,9 @@ pkg_add http://pkgsrc.smartos.skylime.net/skylime-extra/2014Q2/x86_64/spiped-1.3
 echo "* Create ssl folder"
 mkdir -p /opt/local/etc/dovecot/ssl
 
+echo "* Create log folder for dovecot"
+mkdir -p /var/log/dovecot
+
 # Backup via znapzend
 echo "* Backup via znapzend"
 pkg_add http://pkgsrc.smartos.skylime.net/skylime-extra/2014Q2/x86_64/p5-Mojolicious-5.15.tgz
