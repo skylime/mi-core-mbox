@@ -1,5 +1,22 @@
 # Changelog
 
+## 14.2.8
+
+### New
+
+* version bump and base image update. [Thomas Merkel]
+* add logging to extra files and syslog. [Thomas Merkel]
+
+### Fix
+
+* add py27-redis-py required by remove old mailbox script. [Thomas Merkel]
+
+### Other
+
+* add extra logfile for all other stuff. [Thomas Merkel]
+* add logadm for dovecot. [Thomas Merkel]
+* create log folder for dovecot. [Thomas Merkel]
+
 ## 14.2.7
 
 ### New
