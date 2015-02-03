@@ -1,5 +1,27 @@
 # Changelog
 
+## 14.2.9
+
+### New
+
+* version bump and base image update. [Thomas Merkel]
+* add logging to extra files and syslog. [Thomas Merkel]
+
+### Fix
+
+* add py27-redis-py required by remove old mailbox script. [Thomas Merkel]
+
+### Other
+
+* version bump. [Thomas Merkel]
+* dont use .sieve extension for symlink file. [Thomas Merkel]
+* enable sieve for lmtp. [Thomas Merkel]
+* autocreate mailbox and folders, also used by sieve. [Thomas Merkel]
+* fix maildir location and home folder per user. [Thomas Merkel]
+* add extra logfile for all other stuff. [Thomas Merkel]
+* add logadm for dovecot. [Thomas Merkel]
+* create log folder for dovecot. [Thomas Merkel]
+
 ## 14.2.8
 
 ### New
