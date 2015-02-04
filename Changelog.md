@@ -1,5 +1,13 @@
 # Changelog
 
+## 14.2.10
+
+### Other
+
+* version bump. [Thomas Merkel]
+* performance mode. [Thomas Merkel]
+* allow also starttls connections. [Thomas Merkel]
+
 ## 14.2.9
 
 ### New
