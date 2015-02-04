@@ -6,7 +6,7 @@ chmod 400 /opt/local/etc/dovecot/ssl/dovecot.pem
 
 if mdata-get mbox_ssl 1>/dev/null 2>&1; then
 	cat > /opt/local/etc/dovecot/conf.d/core-ssl.conf <<EOF
-ssl = yes
+ssl = required
 disable_plaintext_auth = yes
 ssl_cert = </opt/local/etc/dovecot/ssl/dovecot.pem
 ssl_key = </opt/local/etc/dovecot/ssl/dovecot.pem
