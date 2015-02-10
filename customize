@@ -18,6 +18,11 @@ set -o errexit
 # Configuring image specific packages
 echo "* Configuring image specific packages.";
 
+# update to backported dovecot
+pkg_add -u http://pkgsrc.smartos.skylime.net/skylime-extra/2014Q2/x86_64/dovecot-2.2.15nb1.tgz
+pkg_add -u http://pkgsrc.smartos.skylime.net/skylime-extra/2014Q2/x86_64/dovecot-pigeonhole-0.4.6nb1.tgz
+
+
 # remove mailx lock dir
 rm -rf /var/mail/\:saved/
 
