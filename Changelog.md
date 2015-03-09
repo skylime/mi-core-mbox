@@ -4,6 +4,7 @@
 
 ### Other
 
+* remove munin-node because its already in base. [Thomas Merkel]
 * version bump. [Thomas Merkel]
 * increased vsz_limit for service lmtp due to issues with larger mails (around 100MG) [Boris Poblotzki]
 * add sieve_redirect_envelope_from for sieve redirect rules. [Thomas Merkel]
