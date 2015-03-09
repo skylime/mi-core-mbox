@@ -1,5 +1,18 @@
 # Changelog
 
+## 14.2.11
+
+### Other
+
+* version bump. [Thomas Merkel]
+* increased vsz_limit for service lmtp due to issues with larger mails (around 100MG) [Boris Poblotzki]
+* add sieve_redirect_envelope_from for sieve redirect rules. [Thomas Merkel]
+* increase the mail_max_userip_connections. [Thomas Merkel]
+* update to backported dovecot. [Sebastian Wiedenroth]
+* fix logging for dovecot. [Thomas Merkel]
+* Modify logging, to log also local ports. [Thomas Merkel]
+* Have valid logfile for dovecot munin plugin. [Thomas Merkel]
+
 ## 14.2.10
 
 ### Other
