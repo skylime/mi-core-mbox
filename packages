@@ -2,5 +2,3 @@ dovecot
 dovecot-pigeonhole
 redis
 py27-redis-py
-munin-node
-p5-Net-CIDR
