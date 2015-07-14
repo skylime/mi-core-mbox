@@ -1,5 +1,32 @@
 # Changelog
 
+## 14.4.0
+
+### New
+
+* For the security we should log failed logins to mbox server. [Thomas Merkel]
+
+### Fix
+
+* Rebuild mailbox remove script with some verify checks. [Thomas Merkel]
+
+  We should not remove a mailbox and only archive it. Also it should
+  be good to be sure the mailbox doesn't exists in redis anymore after
+  two runs.
+
+* Dont use /dev/null for cronjob script output. [Thomas Merkel]
+
+### Other
+
+* Cleanup for small space typo. [Thomas Merkel]
+* Mdata-setup are provided via core-base. [Thomas Merkel]
+* Minimal license update to 2015. [Thomas Merkel]
+* Spiped provided via pkgsrc. [Thomas Merkel]
+* We could use the upstream dovecot version for now. [Thomas Merkel]
+* Munin plugins are provided via script from core-base. [Thomas Merkel]
+* Move znapzend to the packages list because it's located in pkgsrc now. [Thomas Merkel]
+* Update manifest files and add json manifest for new version. [Thomas Merkel]
+
 ## 14.2.11
 
 ### Other
