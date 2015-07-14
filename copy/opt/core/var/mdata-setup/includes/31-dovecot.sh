@@ -1,5 +1,5 @@
 #!/bin/bash
-# Configure dovecot ssl certificates
+# Configure dovecot ssl certificates
 
 mdata-get mbox_ssl > /opt/local/etc/dovecot/ssl/dovecot.pem
 chmod 400 /opt/local/etc/dovecot/ssl/dovecot.pem
