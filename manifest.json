@@ -1,11 +1,11 @@
 {
 	"name":         "core-mbox",
-	"version":      "14.4.0",
+	"version":      "15.1.0",
 	"description":  "core.io Mailbox Server",
 	"organization": "SkyLime",
 	"brand":        "Instance",
 	"homepage":     "https://github.com/skylime/mi-core-mbox",
-	"base":         "bdf81f18-cf9a-4327-9a87-259832772271",
+	"base":         "cd5119fb-b4c1-4038-b960-00a3a38f5d1b",
 	"customer_metadata": {
 		"root_authorized_keys": {"type": "text", "description": "SSH public key(s) for the root user"},
 		"syslog_host":          {"type": "text", "description": "syslog server IP address and port seperated by colon"},
