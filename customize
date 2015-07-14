@@ -48,12 +48,6 @@ mkdir -p /opt/local/etc/dovecot/ssl
 echo "* Create log folder for dovecot"
 mkdir -p /var/log/dovecot
 
-# Backup via znapzend
-echo "* Backup via znapzend"
-pkg_add http://pkgsrc.smartos.skylime.net/skylime-extra/2014Q2/x86_64/p5-Mojolicious-5.15.tgz
-pkg_add http://pkgsrc.smartos.skylime.net/skylime-extra/2014Q2/x86_64/p5-Mojo-IOLoop-ForkCall-0.14.tgz
-pkg_add http://pkgsrc.smartos.skylime.net/skylime-extra/2014Q2/x86_64/znapzend-0.12.3.tgz
-
 # Activate munin plugins
 echo "* Activate munin plugins"
 for plugin in "${MUNIN_PLUGINS[@]}"; do
