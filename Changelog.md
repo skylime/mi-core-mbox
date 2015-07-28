@@ -1,5 +1,18 @@
 # Changelog
 
+## %%version%% (unreleased)
+
+### New
+
+* Update to new core-base image. [Thomas Merkel]
+
+### Fix
+
+* Switch to own dovecot version with SENDFILE fix. [Thomas Merkel]
+
+	This update includes the core-base version bump which contains coreutils,
+	so I removed base64.
+
 ## 15.1.0
 
 ### New
