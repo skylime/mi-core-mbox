@@ -1,5 +1,17 @@
 # Changelog
 
+## 16.2.0
+
+### New
+
+* Version bump to 16.2.2 core-base image. [Thomas Merkel]
+
+  Includes new Dovecot version and fixes for munin-plugins
+
+### Fix
+
+* Log to syslog instead of own files - facility: mail. [Boris Poblotzki]
+
 ## 15.1.1
 
 ### New
