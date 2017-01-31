@@ -1,5 +1,11 @@
 # Changelog
 
+## 16.4.0
+
+### New
+
+* Version bump to 16.4.0 with newest Dovecot, etc. [Thomas Merkel]
+
 ## 16.2.0
 
 ### New
