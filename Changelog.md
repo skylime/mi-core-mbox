@@ -1,5 +1,12 @@
 # Changelog
 
+## 16.4.1
+
+### New
+
+* Version bump and Let&#x27;s Encrypt support if no SSL cert is provided via
+  mdata. [Thomas Merkel]
+
 ## 16.4.0
 
 ### New
