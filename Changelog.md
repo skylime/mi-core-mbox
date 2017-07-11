@@ -1,5 +1,11 @@
 # Changelog
 
+# 17.1.0
+
+### New
+
+* Version bump to 17.1.x core-base. [Thomas Merkel]
+
 ## 16.4.1
 
 ### New
