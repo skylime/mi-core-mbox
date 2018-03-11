@@ -1,7 +1,8 @@
 dovecot
 dovecot-pigeonhole
 redis
-py27-redis-py
+py27-redis
 znapzend
 spiped
 nodejs
+base64
