@@ -1,11 +1,11 @@
 {
 	"name":         "core-mbox",
-	"version":      "17.4.0",
+	"version":      "18.4.0",
 	"description":  "core.io Mailbox Server",
 	"organization": "SkyLime",
 	"brand":        "Instance",
 	"homepage":     "https://github.com/skylime/mi-core-mbox",
-	"base":         "cc4c5e60-6104-4b4a-8e0d-4c4213984468",
+	"base":         "99df3def-9355-488f-840f-e7eb6a86c96b",
 	"customer_metadata": {
 		"admin_authorized_keys": {"type": "text", "description": "SSH public authorized key(s) for the admin user"},
 		"root_authorized_keys": {"type": "text", "description": "SSH public authorized key(s) for the root user"},
