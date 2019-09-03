@@ -1,5 +1,29 @@
 # Changelog
 
+## 18.4.1
+
+### New
+
+* Add Support for Dovecot SSL_DH parameter. [Thomas Merkel]
+* Version bump to core-base 18Q4. [Thomas Merkel]
+* Enable logadm rules for dovecot log files. [Thomas Merkel]
+* Move dovecot maildir home to extra folder in user home directory. [Thomas Merkel]
+  To avoid issues with dovcot user home folder and user maildir it's
+  required to move the maildir to an extra subfolder in the user home.
+
+  A migration script is provided in /opt/core/bin/dovecot-mv-maildir-home.sh
+
+### Fix
+
+* Update to latest Dovecot version, provide fix for vulnerability. [Thomas Merkel]
+* Switch to extra logfiles for dovecot. [Thomas Merkel]
+* Fix package rename for py-redis. [Thomas Merkel]
+
+### Other
+
+* Add npm and ignore failed example removals. [Thomas Merkel]
+* Move away from mdata-setup to regular zoneinit. [Thomas Merkel]
+
 # 17.1.0
 
 ### New
