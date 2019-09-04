@@ -18,6 +18,7 @@
 * Update to latest Dovecot version, provide fix for vulnerability. [Thomas Merkel]
 * Switch to extra logfiles for dovecot. [Thomas Merkel]
 * Fix package rename for py-redis. [Thomas Merkel]
+* Fix extglob is required for shell script to move maildirs [Thomas Merkel]
 
 ### Other
 
