@@ -1,7 +1,7 @@
 https://pkgsrc.smartos.skylime.net/skylime-extra/2018Q4/x86_64/dovecot-2.3.7.2.tgz
 https://pkgsrc.smartos.skylime.net/skylime-extra/2018Q4/x86_64/dovecot-pigeonhole-0.5.7.2.tgz
 redis
-py27-redis
+py37-redis
 znapzend
 spiped
 nodejs

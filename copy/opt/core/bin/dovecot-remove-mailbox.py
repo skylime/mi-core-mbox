@@ -36,11 +36,11 @@ for dirDepth in dirsDepth:
         if os.path.exists(rm_file):
             # RM_FILE file exists archive maildir
             shutil.move(mdir, ARCHIVE + "/" + mail + "_" + today)
-            print 'Archived: %s,%s' % (mail, mdir)
+            print('Archived: %s,%s' % (mail, mdir))
         else:
             # create RM_FILE file in maildir
             open(rm_file, 'a').close()
-            print 'Tagged:   %s,%s' % (mail, mdir)
+            print('Tagged:   %s,%s' % (mail, mdir))
     else:
         # remove RM_FILE because account still exists in redis
         if os.path.exists(rm_file):
