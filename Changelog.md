@@ -1,5 +1,11 @@
 # Changelog
 
+## 20.1.0
+
+### New
+
+* Refresh image and use latest core-base release. [Thomas Merkel]
+
 ## 18.4.1
 
 ### New

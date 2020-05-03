@@ -1,7 +1,7 @@
 name="core-mbox"
 organization="SkyLime"
 brand="Instance"
-version="18.4.1"
+version="20.1.0"
 description="core.io Mailbox Server"
 homepage="https://github.com/skylime/mi-core-mbox"
 users="root admin"
